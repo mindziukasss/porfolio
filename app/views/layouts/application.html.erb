@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header id="main_navigation" class="clearfix">
-		<a href="inddex.html" class="name">Mindaugas Bernotas</a>
+		<%= link_to "Mindaugas Bernotas", root_path, class: "name" %>
 		<nav>
 			<%= link_to "Articles", posts_path %>
 			<a href="#">Projects</a>
@@ -21,7 +21,17 @@
 	</header>
 
 
-<%= yield %>
+	<%= yield %>
+
+	<footer id="main_footer">
+		<p class="copyright">&#169;2016 Mindaugas Bernotas
+		</p>
+		<nav>
+			<a href="http://www.gmail.com" target="blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+			<a href="http://github.com" target="blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+			<a href="http://www.facebook.com" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		</nav>		
+	</footer>
 
 </body>
 </html>
