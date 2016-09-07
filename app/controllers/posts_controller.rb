@@ -14,7 +14,7 @@ class PostsController < ApplicationController
 			redirect_to @post, notice: " Your article was successfully saved!"
 		else
 			render 'new', notice: "I was unable to save your post."
-		end
+		end 
 
 	end
 
