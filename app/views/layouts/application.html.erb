@@ -21,12 +21,16 @@
 		</nav>
 	</header>
 
+	<% if notice %>
+		<p class="notice"><%= notice %></p>
+	<% elsif alert %>
+   <p class="alert"><%= alert %></p>
+  <% end %> 
 
 	<%= yield %>
 
 	<footer id="main_footer">
-		<p class="copyright">&#169;2016 Mindaugas Bernotas
-		</p>
+		<p class="copyright">&#169;2016 Mindaugas Bernotas</p>
 		<nav>
 			<a href="http://www.gmail.com" target="blank"><i class="fa fa-google" aria-hidden="true"></i></a>
 			<a href="http://github.com" target="blank"><i class="fa fa-github" aria-hidden="true"></i></a>
